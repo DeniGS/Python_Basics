@@ -1,0 +1,23 @@
+import math
+figure = input()
+
+if figure == "square":
+    side = float(input())
+    sq_area = side * side
+    print('{:.3f}'.format(sq_area))
+elif figure == "rectangle":
+    side_a = float(input())
+    side_b = float(input())
+    r_area = side_a * side_b
+    print('{:.3f}'.format(r_area))
+elif figure == "circle":
+    radius = float(input())
+    c_area = math.pi * radius *radius
+    print('{:.3f}'.format(c_area))
+elif figure == "triangle":
+    side_a = float(input())
+    side_b = float(input())
+    tr_area = (side_a * side_b) / 2
+    print('{:.3f}'.format(tr_area))
+else:
+    pass
